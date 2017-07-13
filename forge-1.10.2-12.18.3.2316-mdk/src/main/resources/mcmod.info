@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "modid": "MyHeroAcademiaMod",
+  "name": "My Hero Academia Mod",
+  "description": "A mod based on the popular anime Boku No Hero Academia.",
+  "version": "1.0",
+  "mcversion": "1.10.2",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["FlameGamingHD","GiantMelon"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
