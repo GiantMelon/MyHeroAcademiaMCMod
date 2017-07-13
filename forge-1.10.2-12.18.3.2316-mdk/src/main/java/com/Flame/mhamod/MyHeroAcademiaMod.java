@@ -1,5 +1,6 @@
 package com.Flame.mhamod;
 
+import com.Flame.mhamod.configuration.ConfigurationHandler;
 import com.Flame.mhamod.proxy.IProxy;
 import com.Flame.mhamod.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
@@ -20,7 +21,7 @@ public class MyHeroAcademiaMod
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event)
