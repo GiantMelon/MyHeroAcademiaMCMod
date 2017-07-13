@@ -14,7 +14,7 @@ public class MyHeroAcademiaMod
     @Mod.Instance(Reference.MOD_ID)
     public static MyHeroAcademiaMod instance;
 
-    @SidedProxy(clientSide = "com.Flame.mhamod.proxy.ClientProxy", serverSide = "com.Flame.mhamod.proxy.ServerProxy")
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.EventHandler
