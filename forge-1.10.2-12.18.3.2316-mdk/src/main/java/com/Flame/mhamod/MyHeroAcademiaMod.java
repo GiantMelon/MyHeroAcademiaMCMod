@@ -1,15 +1,21 @@
 package com.Flame.mhamod;
 
+import com.Flame.mhamod.proxy.IProxy;
+import com.Flame.mhamod.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="MyHeroAcademiaMod", name="My Hero Academia Mod", version="1.10.2-1.0")
+@Mod(modid = Reference.MOD_ID, name=Reference.MOD_NAME, version= Reference.VERSION)
 public class MyHeroAcademiaMod
 {
-    @Mod.Instance("MyHeroAcademiaMod")
+    @Mod.Instance(Reference.MOD_ID)
     public static MyHeroAcademiaMod instance;
+
+    @SidedProxy(clientSide = "com.Flame.mhamod.proxy.ClientProxy", serverSide = "com.Flame.mhamod.proxy.ServerProxy")
+    public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
